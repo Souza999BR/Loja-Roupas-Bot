@@ -1,0 +1,35 @@
+{
+  "name": "lojaroupasbot",
+  "version": "1.0.0",
+  "description": "Bot de gestão de loja de roupas para Telegram",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "npm run build && node dist/main.js",
+    "build": "tsc",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.44.0",
+    "pg": "^8.13.3",
+    "pino": "^9.14.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.14",
+    "drizzle-kit": "^0.31.0",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
